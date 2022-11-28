@@ -15,6 +15,8 @@ function Router(): JSX.Element {
                 <Route path="/ShortCourses" element={<ShortCourses/>}/>
                 <Route path="/SummerCourses" element={<SummerCourses/>}/>
                 <Route path="/YearlyCourses" element={<YearlyCourses/>}/>
+                <Route path="/" element={<Home/>}/>
+                <Route path="*" element={<Home/>}/>
             </Routes>
         </div>
     );
