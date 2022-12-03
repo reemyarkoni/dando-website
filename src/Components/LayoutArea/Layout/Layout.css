@@ -1,3 +1,15 @@
 .Layout {
-	
+	margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 100px;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Layout>*{
+    padding: 10px;
+    border: 1px solid black;
 }
