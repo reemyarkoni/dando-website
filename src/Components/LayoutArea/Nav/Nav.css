@@ -1,0 +1,14 @@
+.Nav .navLinks{
+    display: flex;
+    justify-content: center;
+}
+
+.Nav .navLinks *{
+	margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px;
+    color:darkblue;
+    font-weight: bold;
+    text-decoration-line: none;
+
+}

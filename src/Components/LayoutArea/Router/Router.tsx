@@ -12,9 +12,9 @@ function Router(): JSX.Element {
 			<Routes>
                 <Route path="/Home" element={<Home/>}/>
                 <Route path="/Familiarity" element={<Familiarity/>}/>
-                <Route path="/ShortCourses" element={<ShortCourses/>}/>
-                <Route path="/SummerCourses" element={<SummerCourses/>}/>
-                <Route path="/YearlyCourses" element={<YearlyCourses/>}/>
+                <Route path="/Short" element={<ShortCourses/>}/>
+                <Route path="/Summer" element={<SummerCourses/>}/>
+                <Route path="/Yearly" element={<YearlyCourses/>}/>
                 <Route path="/" element={<Home/>}/>
                 <Route path="*" element={<Home/>}/>
             </Routes>
