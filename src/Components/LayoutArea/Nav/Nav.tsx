@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom"
 
 function Nav(): JSX.Element {
 
-    let activeStyle = {color : "red"}
+    let activeStyle = {color : "rgb(105, 153, 93)"}
 
     function Style(isActive : boolean){
         return isActive ? activeStyle : undefined
@@ -12,9 +12,9 @@ function Nav(): JSX.Element {
     return (
         <div className="Nav">
             <span className="navLinks">
-            <NavLink style={ ({ isActive }) => Style(isActive)} to={"/Home"}>Home</NavLink>
-            <NavLink style={ ({ isActive }) => Style(isActive)} to={"/Short"}>Short Courses</NavLink>
-            <NavLink style={ ({ isActive }) => Style(isActive)} to={"/Summer"} >Summer Courses</NavLink>
+            <NavLink style={ ({ isActive }) => Style(isActive)} to={"/Summer"} >סדנאות קיץ</NavLink>
+            <NavLink style={ ({ isActive }) => Style(isActive)} to={"/Short"}>סדנאות הכירות</NavLink>
+            <NavLink style={ ({ isActive }) => Style(isActive)} to={"/Home"}>בית</NavLink>
             </span>
         </div>
     );
