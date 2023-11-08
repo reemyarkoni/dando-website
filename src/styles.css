@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Fredoka';
+    font-weight: 300 600;
+    src: url('./assets/Fredoka-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+:root{
+    font-size: 14px;
+    --font-family-default: 'Fredoka', sans-serif;
+
+    /* font weights */
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-bolder: 800;
+
+    /* font sizes */
+    --fs-400: 1.125rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 1.75rem;
+    --fs-800: 2rem;
+    --fs-900: 5rem;
+
+    /* colors */
+    --background-color: gray;
+
+    --padding: 1rem;  
+    --margin: 1rem;
+    --border-radius: 1rem;    
+    --picture-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.19);
+}
+
+/* universal box-sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-default);
+    font-size: var(--fs-400);
+    
+    /* Background image */
+    /* background-image: url('./assets/images/final/backdrop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
