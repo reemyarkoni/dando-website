@@ -4,6 +4,7 @@
     font-weight: 300 600;
     src: url('./assets/Fredoka-VariableFont_wdth,wght.ttf') format('truetype');
 }
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 :root{
     font-size: 14px;
