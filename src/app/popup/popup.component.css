@@ -1,0 +1,16 @@
+.container{
+    width: 50vw;
+    height: 25vh;
+    background-color: rgb(221, 221, 221);
+    direction: rtl;
+}
+
+.header{
+    --_shadow: var(--shadow, red);
+    background-color: var(--_shadow);
+    padding: 1rem;
+}
+
+.body{
+    padding: 2rem;
+}

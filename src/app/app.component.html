@@ -1,15 +1,7 @@
-
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-    <img
-        width="40"
-        alt="Angular Logo"
-        src="../assets/images/final/dando.ico"
-        class="banner-element"
-    />
-    
+    <img width="40" alt="dando-logo" src="../assets/images/final/dando.ico" class="banner-element" />
     <h1 class="banner-element title">דאן דו: הכוחות שבתוכנו</h1>
-    
     <span class="banner-element contact">
         <p>054-483-3382</p>
         <p>almog.dando&#64;gmail.com</p>
@@ -18,54 +10,90 @@
 
 <div class="content" role="main">
 
-  <!-- images -->
-  <div class="images">
-    <img class="image" src="../assets/images/final/kids.jpg" alt="">
-    <img class="image" src="../assets/images/final/outside.jpg" alt="">
-    <img class="image" src="../assets/images/final/teenagers.jpg" alt="">
-    <img class="image" src="../assets/images/final/chairs.jpg" alt="">
-  </div>
-  
-  <!-- Seminar Buttons -->
-  <div class="card-container">
-    <button (click)="openBottomSheet()">open</button>
-    <a class="card" target="_blank" rel="noopener" href="https://angular.io/tutorial">
-      <span>סדנא ארוכת טווח</span>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="https://angular.io/tutorial">
-        <span>סדנא קצרת טווח</span>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="https://angular.io/tutorial">
-        <span>סדנא חד פעמית</span>
-    </a>
-  </div>
+    <!-- images -->
+    <div class="images">
+        <img class="biz-image" src="../assets/images/final/kids.jpg" alt="">
+        <img class="biz-image" src="../assets/images/final/outside.jpg" alt="">
+        <img class="biz-image" src="../assets/images/final/teenagers.jpg" alt="">
+        <img class="biz-image" src="../assets/images/final/chairs.jpg" alt="">
+    </div>
+    
 
-  <!-- Dan-Do Paragraph -->
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad qui sequi nemo assumenda facilis ducimus atque adipisci porro magni, perspiciatis ipsum illo fugit ex iusto beatae. Atque cupiditate quaerat cum architecto odit eum sequi libero totam esse nisi dicta, labore repudiandae quo. Doloremque ducimus culpa, aperiam consequuntur eveniet id atque fuga. Quibusdam odio nihil eaque eos est. Aliquid consequuntur perferendis quas ullam repellat odit reprehenderit quos. Explicabo, deserunt magni nesciunt numquam sed accusamus voluptatibus non repudiandae dolor libero voluptatum quo quia, quas unde repellendus culpa saepe placeat cupiditate obcaecati maiores! Repellendus consequatur, quis at voluptatibus nam laudantium quae necessitatibus iste?
+    <!-- Seminar Buttons -->
+    <div class="card-container">
+        <button class="card long-term" (click)="openDialog(2)">
+            סדנא ארוכת טווח
+            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 16L16 16M16 16L14 16M16 16L16 14M16 16L16 18" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M7 4V2.5" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M17 4V2.5" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M21.5 9H16.625H10.75M2 9H5.875" stroke-width="1.5" stroke-linecap="round" />
+                <path
+                    d="M14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C20.1752 21.4816 19.3001 21.7706 18 21.8985"
+                    stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </button>
+        <button class="card short-term" (click)="openDialog(1)">
+            סדנא קצרת טווח
+            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 12L9.0423 14.9289C6.11981 17.823 4.65857 19.27 5.06765 20.5185C5.10282 20.6258 5.14649 20.7302 5.19825 20.8307C5.80046 22 7.86697 22 12 22C16.133 22 18.1995 22 18.8017 20.8307C18.8535 20.7302 18.8972 20.6258 18.9323 20.5185C19.1625 19.816 18.8005 19.0506 17.9193 18M12 12L14.9577 14.9289M12 12L14.9577 9.07107C17.8802 6.177 19.3414 4.72997 18.9323 3.48149C18.8972 3.37417 18.8535 3.26977 18.8017 3.16926C18.1995 2 16.133 2 12 2C7.86697 2 5.80046 2 5.19825 3.16926C5.14649 3.26977 5.10282 3.37417 5.06765 3.48149C4.83747 4.18399 5.19945 4.94935 6.08073 6M12 12L9.0423 9.07107"
+                    stroke-width="1.5" stroke-linecap="round" />
+                <path d="M10 5.5H14" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M10 18.5H14" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </button>
+        <button class="card single" (click)="openDialog(0)">
+            סדנא חד פעמית
+            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12L5 12" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M19 12L22 12" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M12 22L12 19" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M12 5L12 2" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M10 12H12H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 14L12 12L12 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                    stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </button>
+
+    </div>
+
+    <!-- Dan-Do Paragraph -->
+    <p>
+        בכל אחד ואחת קיימים כוחות וחוזקות לצד התמודדויות עם קשיים ואתגרים שונים. בעשורים הראשונים לחיינו רבים מסתובבים
+        עם התחושה כי "רק אני חווה את זה", דבר אשר מעצים את תחושת הבדידות והמצוקה האישית. המפגשים הקבוצתיים מאפשרים
+        למשתתפים הן לתמוך והן להיתמך אחד בשנייה, לחזק את המיומנויות החברתיות שלהם, להנות ולהתרגש ביחד, לייצר קשרים
+        משמעותיים, ומתוך כך להתפתח הן בהיבט האישי והן בהיבט החברתי. </p>
+
+    <p>
+        בהנחיית אלמוג ירקוני MSW B.Ed
     </p>
-  
-  <p>
-    MSW B.Ed בהנחיית אלמוג ירקוני
-  </p>
 
-  <img class="almog-pic" src="../assets/images/final/almog.jpg" alt="">
+    <img class="almog-pic" src="../assets/images/final/almog.jpg" alt="">
 
-  <!-- images -->
-  <div class="images">
-    <img class="image" src="../assets/images/final/with penitents/harry-potter.jpg" alt="">
-    <img class="image" src="../assets/images/final/with penitents/purim.jpg" alt="">
-    <img class="image" src="../assets/images/final/with penitents/teenagers.jpg" alt="">
-    <img class="image" src="../assets/images/final/with penitents/with-penitents-kick.jpg" alt="">
-  </div>
+    <!-- images -->
+    <div class="images">
+        <img class="biz-image" src="../assets/images/final/with penitents/harry-potter.jpg" alt="">
+        <img class="biz-image" src="../assets/images/final/with penitents/purim.jpg" alt="">
+        <img class="biz-image" src="../assets/images/final/with penitents/teenagers.jpg" alt="">
+        <img class="biz-image" src="../assets/images/final/with penitents/with-penitents-kick.jpg" alt="">
+    </div>
 
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum voluptatem vel dolore quos odit explicabo soluta suscipit itaque at obcaecati fuga, reprehenderit error dicta autem non, nisi exercitationem. Tenetur, deleniti nemo harum aut vel libero in id iusto accusamus veritatis maiores ducimus architecto, ad maxime, quisquam earum. Rem, maxime! Nostrum facilis asperiores nesciunt quo in beatae officiis aut reiciendis perspiciatis! Aspernatur mollitia facere, blanditiis cupiditate rem quibusdam? Provident, eum quaerat. Ab quisquam praesentium vel tempore voluptas dolores cumque, accusamus error ut voluptatibus consequatur dignissimos unde odio, aut quasi laudantium, velit nulla porro similique enim! Perferendis laudantium veritatis dignissimos corrupti?
-  </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum voluptatem vel dolore quos odit explicabo
+        soluta suscipit itaque at obcaecati fuga, reprehenderit error dicta autem non, nisi exercitationem. Tenetur,
+        deleniti nemo harum aut vel libero in id iusto accusamus veritatis maiores ducimus architecto, ad maxime,
+        quisquam earum. Rem, maxime! Nostrum facilis asperiores nesciunt quo in beatae officiis aut reiciendis
+        perspiciatis! Aspernatur mollitia facere, blanditiis cupiditate rem quibusdam? Provident, eum quaerat. Ab
+        quisquam praesentium vel tempore voluptas dolores cumque, accusamus error ut voluptatibus consequatur
+        dignissimos unde odio, aut quasi laudantium, velit nulla porro similique enim! Perferendis laudantium veritatis
+        dignissimos corrupti?
+    </p>
 
-  <p>
-    *הסדנא נבנית ומותאמת לאוכלוסית היעד הספציפית. הן החלק השיחתי והן החלק הפיזי יותאמו לסוג האוכלוסיה ולצרכים הספציפיים שעולים מהשטח, לכן סדנא עבור בני נוער תהיה שונה מסדנא עבר ילדים.
-  </p>
+    <p class="ps">
+        *הסדנא נבנית ומותאמת לאוכלוסית היעד הספציפית. הן החלק השיחתי והן החלק הפיזי יותאמו לסוג האוכלוסיה ולצרכים
+        הספציפיים שעולים מהשטח, לכן סדנא עבור בני נוער תהיה שונה מסדנא עבר ילדים.
+    </p>
 </div>
-
-<router-outlet></router-outlet>

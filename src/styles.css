@@ -7,7 +7,6 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 :root{
-    font-size: 14px;
     --font-family-default: 'Fredoka', sans-serif;
 
     /* font weights */
@@ -16,20 +15,46 @@
     --fw-bolder: 800;
 
     /* font sizes */
-    --fs-400: 1.125rem;
+    --fs-300: 0.75rem;
+    --fs-400: 1rem;
     --fs-500: 1.25rem;
     --fs-600: 1.5rem;
     --fs-700: 1.75rem;
     --fs-800: 2rem;
-    --fs-900: 5rem;
+    --fs-900: 2.5rem;
+
+    /* images */
+    --image-size: 20rem;
+    --image-margin: 3rem;
 
     /* colors */
-    --background-color: gray;
+    --bg-color: #eaeaea;
+    --color-silver: #BFC0C0;
+    --color-racing-red: #bd162c;
+    --color-chambray-blue: #3C5291;
 
     --padding: 1rem;  
-    --margin: 1rem;
+    --margin: 2.5rem;
     --border-radius: 1rem;    
     --picture-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.19);
+
+    
+    /* cards */
+    --card-height: 3rem;
+    --card-width: 15rem;
+    .single {
+        --shadow:#AAC8A7;
+        --primary: #337357;
+    }
+    
+    .short-term {
+        --shadow:#EBE76C;
+        --primary: #F0B86E;
+    }
+    .long-term {
+       --shadow: #C499F3;
+       --primary: #6962AD;
+    }
 }
 
 /* universal box-sizing */
@@ -42,10 +67,12 @@
 
 body {
     font-family: var(--font-family-default);
-    font-size: var(--fs-400);
-    
-    /* Background image */
-    /* background-image: url('./assets/images/final/backdrop.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; */
+    background-color: var(--bg-color);
+}
+
+
+@media screen and ( width < 800px) {
+    :root{
+        /* --bg-color: red; */
+    }
 }
